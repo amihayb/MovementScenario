@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="MovementScenarios.css" rel="stylesheet">
+    <link rel="icon" href="images/icon.ico" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body onload="plotMe()">
+    <div class="topnav" margin-left="30%" padding="0px 10px">
+        <a margin-left="30%" href=""><b>Bounce Movement Profile</b></a>
+        <a
+            onclick="alert('Shows acceleration and rate effects on bounce profile.\nFor anything more, contact me:\nAmihay Blau\nmail: amihay@blau-eng.co.il\nPhone: +972-54-6668902');">by
+            RAFAEL</a>
+
+            <a  class="button" href="/link/to/page2">Go to Target Tracking</a>
+
+    </div>
+
+    <div class="sidenav" id="sidenav">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" id="profile1" name="profile1" onclick="plotMe()" checked>
+                <label for="profile1">1st Profile</label>
+            </span>
+            <div class="break"></div>
+            <label for="txt_q1">Bounce Angle &theta; [deg]:</label>
+            <input type="text" id="txt_q1" class="txt_input" value="90" onchange="plotMe()">
+            <div class="break"></div>
+            <label for="txt_w1">Max. Rate &omega; [rad/s]:</label>
+            <input type="text" id="txt_w1" class="txt_input" value="1" onchange="plotMe()">
+            <div class="break"></div>
+            <label for="txt_a1">Max Acc. &alpha; [rad/s<sup>2]:</label>
+            <input type="text" id="txt_a1" class="txt_input" value="1" onchange="plotMe()">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" id="profile2" name="profile2" onclick="plotMe()">
+                <label for="profile2">2nd Profile</label>
+            </span>
+            <div class="break"></div>
+            <label for="txt_q2">Bounce Angle &theta; [deg]:</label>
+            <input type="text" id="txt_q2" class="txt_input" value="90" onchange="plotMe()">
+            <div class="break"></div>
+            <label for="txt_w2">Max. Rate &omega; [rad/s]:</label>
+            <input type="text" id="txt_w2" class="txt_input" value="0.8" onchange="plotMe()">
+            <div class="break"></div>
+            <label for="txt_a2">Max Acc. &alpha; [rad/s<sup>2]:</label>
+            <input type="text" id="txt_a2" class="txt_input" value="1.4" onchange="plotMe()">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" id="profile3" name="profile3" onclick="plotMe()">
+                <label for="profile3">3rd Profile</label>
+            </span>
+            <div class="break"></div>
+            <label for="txt_q3">Bounce Angle &theta; [deg]:</label>
+            <input type="text" id="txt_q3" class="txt_input" value="90" onchange="plotMe()">
+            <div class="break"></div>
+            <label for="txt_w3">Max. Rate &omega; [rad/s]:</label>
+            <input type="text" id="txt_w3" class="txt_input" value="1.5" onchange="plotMe()">
+            <div class="break"></div>
+            <label for="txt_a3">Max Acc. &alpha; [rad/s<sup>2]:</label>
+            <input type="text" id="txt_a3" class="txt_input" value="0.95" onchange="plotMe()">
+        </div>
+        
+    </div>
+    <div class="plot" id="plot">
+    </div>
+
+    <script src="MovementScenarios.js"></script>
+</body>
+
+</html>
