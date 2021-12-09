@@ -20,14 +20,13 @@ function plotMe() {
             title: 'Time [s]'
         }, 
         yaxis: {
-            title: 'Acc. [rad/s<sup>2</sup>]'
+            title: 'Acc. <br>[rad/s<sup>2</sup>]'
         },
-        title2: 'aaa',
         yaxis2: {
-            title: 'Rate [rad/s]'
+            title: 'Rate <br>[rad/s]'
         },
         yaxis3: {
-            title: 'Angle [deg]'
+            title: 'Angle <br>[deg]'
         }
     }
     Plotly.newPlot('plot', data, layout, {editable: true});
