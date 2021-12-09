@@ -49,7 +49,7 @@ function calcLine(target_v, target_r, q0) {
     // Movement Profile
     const x0 = target_r*Math.tan(q0);
     const tEnd = 2*x0 / target_v;
-
+ 
 	tv = makeArr(0,tEnd,tEnd*100+1);
 	let Av = [];
     let Vv = [];
